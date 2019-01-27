@@ -69,7 +69,7 @@ $(document).ready(function() {
       // append them to the body
       $('.image-container').append(willDancer.$node);
       $('.image-container').append(kattanDancer.$node);
-
+        
       // start the music!
       document.getElementById('music-player').play();
     } else {
@@ -77,5 +77,36 @@ $(document).ready(function() {
     }
 
   });
+
+  // select the maker functions
+  var willDancerFunction = window['MakeWillDancer'];
+  var kattanDancerFunction = window['MakeKattanDancer'];
+  // change the background image to the car scene
+  // remove the old scene first
+  $('.image-container').remove();
+
+  // create a container for the picture and dancers to append into
+  $('body').append('<div class="image-container"/>');
+
+  // create a will dancer
+  var willDancer = new willDancerFunction(
+    // 300,
+    // 810,
+    '10%',
+    '58%',
+    Math.random() * 1000);
+  // create a kattan dancer
+  var kattanDancer = new kattanDancerFunction(
+    // 350,
+    // 565,
+    '25%',
+    '8%',
+    Math.random() * 1000);
+  // append them to the body
+  $('.image-container').append(willDancer.$node);
+  $('.image-container').append(kattanDancer.$node);
+    
+  // start the music!
+  document.getElementById('music-player').play();
 });
 

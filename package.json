@@ -1,0 +1,27 @@
+{
+  "name": "jquery-dance-party",
+  "version": "1.0.0",
+  "description": "A dance party powered by jQuery",
+  "main": "server.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/irbab00n/jquery-dance-party.git"
+  },
+  "author": "Thomas Cosby",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/irbab00n/jquery-dance-party/issues"
+  },
+  "homepage": "https://github.com/irbab00n/jquery-dance-party#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "jquery": "^3.3.1"
+  }
+}

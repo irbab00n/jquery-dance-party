@@ -39,7 +39,7 @@ body, a:link, a:visited, a:active {
 .will-dancer {
   width: 150px;
   height: 150px;
-  background-image: url('/Users/cosbyte/Desktop/HR/hrsf80-subclass-dance-party/media/will.png');
+  background-image: url('./media/will.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -67,7 +67,7 @@ body, a:link, a:visited, a:active {
 .kattan-dancer {
   width: 160px;
   height: 160px;
-  background-image: url('/Users/cosbyte/Desktop/HR/hrsf80-subclass-dance-party/media/kattan.png');
+  background-image: url('./media/kattan.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
