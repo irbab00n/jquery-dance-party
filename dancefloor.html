@@ -6,11 +6,21 @@
     <script src="lib/jquery.js"></script>
     <script src="src/dancer.js"></script>
     <script src="src/blinkyDancer.js"></script>
+    <script src="src/willDancer.js"></script>
+    <script src="src/kattanDancer.js"></script>
   </head>
   <body>
     <div class="topbar">
       <span class="title">object dance party</span>
-      <a href="#" class="addDancerButton" data-dancer-maker-function-name="makeBlinkyDancer">add a blinky dancer</a>    </div>
+      <a href="#" class="addDancerButton" data-dancer-maker-function-name="MakeBlinkyDancer">add a blinky dancer</a>
+      <a href="#" class="addDancerButton" data-dancer-maker-function-name="MakeWillDancer">add a Will dancer</a>
+      <a href="#" class="addDancerButton" data-dancer-maker-function-name="MakeKattanDancer">add a Kattan dancer</a>
+      <a href="#" class="changeSceneButton" data-scene-changer-function-name="changeCarScene">car scene</a>
+      <a href="#" class="changeSceneButton" data-scene-changer-function-name="changeDefaultScene">reset</a>
+      <audio controls id="music-player">
+        <source src="/Users/cosbyte/Desktop/HR/hrsf80-subclass-dance-party/media/whatIsLove.mp3" type="audio/mpeg">
+      </audio>
+    </div>
     <script src="src/init.js"></script>
   </body>
 </html>

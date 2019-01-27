@@ -1,27 +1,93 @@
-body, html{
+body, html {
   height:100%;
 }
-body{
+body {
   margin: 0px;
   background-color:#444;
   font-size: 18px;
 }
-body, a:link, a:visited, a:active{
+body, a:link, a:visited, a:active {
   color: lightblue;
 }
-.title, .addDancerButton{
+.title, .addDancerButton {
   padding:5px 12px;
   float:right;
 }
-.topbar{
+.title, .changeSceneButton {
+  padding:5px 12px;
+  float:right;
+}
+.topbar {
   height:32px;
   background-color: #555;
 }
-.title{
+.title {
   background-color: #777;
 }
-.dancer{
-  border:10px solid red;
-  border-radius:10px;
-  position:absolute;
+
+.image-container {
+  margin: auto;
+  height: 400px;
+  width: 640px;
+  background-image: url('http://i632.photobucket.com/albums/uu44/Crush_knvs/snapshot20090614000831.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  top: 25%;
+}
+
+.will-dancer {
+  width: 150px;
+  height: 150px;
+  background-image: url('/Users/cosbyte/Desktop/HR/hrsf80-subclass-dance-party/media/will.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  animation-duration: .24s;
+  animation-name: moving-will;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  position: absolute;
+  transform-origin: center center;
+}
+
+@keyframes moving-will {
+  from {
+    margin-left: -1%;
+    margin-top: 1%;
+    transform: rotate(-7deg)
+  }
+  to {
+    margin-left: 1%;
+    margin-bottom: -1%;
+    transform: rotate(7deg)
+  }
+}
+
+.kattan-dancer {
+  width: 160px;
+  height: 160px;
+  background-image: url('/Users/cosbyte/Desktop/HR/hrsf80-subclass-dance-party/media/kattan.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  animation-duration: .24s;
+  animation-name: moving-kattan;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  position: absolute;
+  transform-origin: center center;
+}
+
+@keyframes moving-kattan {
+  from {
+    margin-left: 1.1%;
+    margin-top: 1%;
+    transform: rotate(4deg);
+  }
+  to {
+    margin-left: -1.1%;
+    margin-top: -1%;
+    transform: rotate(-4deg);
+  }
 }
