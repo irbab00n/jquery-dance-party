@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "A dance party powered by jQuery",
   "main": "server.js",
+  "engines": {
+    "node": "10.3.0"
+  },
   "directories": {
     "lib": "lib"
   },
